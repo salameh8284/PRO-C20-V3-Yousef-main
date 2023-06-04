@@ -33,7 +33,7 @@ function setup(){
     //created multiple of particle bodies 
     var particle_options = {
       restitution:0.4,
-      friction:0.02
+      friction:0.05
     }
 
     particle1 = Bodies.circle(220,10,10,particle_options);
@@ -51,7 +51,7 @@ function setup(){
       // isStatic=true
       // isStatic true
       // isStatic:false
-      // isStatic:true
+      isStatic:true
     };
 
     // rotator1 = rectangle(250,200,150,20,rotator_options);
@@ -63,8 +63,8 @@ function setup(){
     // rotator1 = Bodies.circle(250,200,150,20,rotator_options);
     // World.add(world,rotator1);
 
-    // rotator1 = Bodies.rectangle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
+    rotator1 = Bodies.rectangle(250,200,150,20,rotator_options);
+    World.add(world,rotator1);
 
     rotator2 = Bodies.rectangle(250,200,150,20,rotator_options);
     World.add(world,rotator2);
@@ -89,7 +89,9 @@ function draw(){
   rect(block2.position.x,block2.position.y,150,20);
 
   //created shape for all the paticles
-  ellipse(particle1.position.x,particle1.position.y,10);
+  //ellipse(particle1.position.x,particle1.position.y,10);
+  rect(particle1.position.x,particle1.position.y,20,20);
+
   ellipse(particle2.position.x,particle2.position.y,10);
   ellipse(particle3.position.x,particle3.position.y,10);
   ellipse(particle4.position.x,particle4.position.y,10);
