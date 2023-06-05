@@ -89,8 +89,8 @@ function draw(){
   rect(block2.position.x,block2.position.y,150,20);
 
   //created shape for all the paticles
-  //ellipse(particle1.position.x,particle1.position.y,10);
-  rect(particle1.position.x,particle1.position.y,20,20);
+  ellipse(particle1.position.x,particle1.position.y,10);
+  //rect(particle1.position.x,particle1.position.y,20,20);
 
   ellipse(particle2.position.x,particle2.position.y,10);
   ellipse(particle3.position.x,particle3.position.y,10);
